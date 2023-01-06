@@ -23,18 +23,6 @@ https://github.com/arksine/moonraker
   
   For full instructions on how to use Device Tree overlays see [this page](https://www.raspberrypi.org/documentation/configuration/device-tree.md). 
   
-  In brief, add a line to the `/boot/config.txt` file to apply a Device Tree overlay.
-    
-    dtoverlay=disable-bt
-
-### [Enabling Klipper's API socket](https://www.klipper3d.org/API_Server.html)
-  By default, the Klipper's API socket is not enabled. In order to use the API server, the file /etc/default/klipper need to be updated form
-
-    KLIPPY_ARGS="/home/pi/klipper/klippy/klippy.py /home/pi/printer.cfg -l /tmp/klippy.log"
-To:
-
-    KLIPPY_ARGS="/home/pi/klipper/klippy/klippy.py /home/pi/printer.cfg -a /tmp/klippy_uds -l /tmp/klippy.log"
-
 ### Library requirements 
 
   Thanks to [wolfstlkr](https://www.reddit.com/r/ender3v2/comments/mdtjvk/octoprint_klipper_v2_lcd/gspae7y)
